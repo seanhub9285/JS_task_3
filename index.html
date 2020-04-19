@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TASK 3</title>
+</head>
+<body>
+<script>
+    function numString(num){
+        let myArr = [];
+        let print;
+        for(let i = 1; i <= num; i++){
+            if (i % 2 === 0 && i % 3 === 0 && i % 5 === 0){
+                print = "yu-gi-oh";
+            } else if (i % 3 === 0 && i % 5 === 0) {
+                print = "gi-oh";
+            } else if (i % 2 === 0 && i % 5 === 0){
+                print = "yu-oh";
+            } else if (i % 2 === 0 && i % 3 === 0){
+                print = "yu-gi";
+            } else if (i % 2 === 0){
+                print = "yu";
+            } else if (i % 3 === 0){
+                print = "gi";
+            } else if (i % 5 === 0){
+                print = "oh";
+            } else{
+                print = i;
+            }
+            myArr.push(print);
+        };
+            console.log(myArr);
+            return myArr;                          
+    };
+    numString(100);
+    numString(90);
+</script>
+</body>
+</html>
